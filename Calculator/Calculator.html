@@ -2,9 +2,36 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".numButton").click(function(){
+    $("#NumBox").val($("#NumBox").val() + this.innerHTML);
+  });
+});
 
+</script>
 </head>
+
 <body>
+
+<div id="NumberBox">
+<input type="text" id="NumBox"></input>
+</div>
+
+<div id="Buttons">
+<button id="but1" class="numButton">1</button>
+<button id="but2" class="numButton">2</button>
+<button id="but3" class="numButton">3</button><br>
+<button id="but4" class="numButton">4</button>
+<button id="but5" class="numButton">5</button>
+<button id="but6" class="numButton">6</button><br>
+<button id="but7" class="numButton">7</button>
+<button id="but8" class="numButton">8</button>
+<button id="but9" class="numButton">9</button><br>
+<button id="but+">+</button>
+<button id="but0" class="numButton">0</button>
+<button id="but=">=</button><br>
+</div>
 
 </body>
 </html>
